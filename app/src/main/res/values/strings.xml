@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CPUPerfDemo</string>
+    <string name="remaining">Remaining: %1$s</string>
+</resources>
