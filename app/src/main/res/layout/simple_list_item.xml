@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp">
 
+<!--    <TextView-->
+<!--        android:id="@+id/dateView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Date"-->
+<!--        android:textAppearance="?attr/textAppearanceListItem" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/remainingTimeView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Remaining Time"-->
+<!--        android:textAppearance="?attr/textAppearanceListItemSecondary" />-->
+
     <TextView
         android:id="@+id/dateView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Date"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:fontFamily="sans-serif-medium"
+        android:lines="1"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:text="@tools:sample/date/ddmmyy" />
 
     <TextView
         android:id="@+id/remainingTimeView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remaining Time"
-        android:textAppearance="?attr/textAppearanceListItemSecondary" />
+        android:fontFamily="sans-serif-light"
+        android:lines="1"
+        tools:text="Remaining: 2 d 1 h 23 min 5 s" />
+
 </LinearLayout>
